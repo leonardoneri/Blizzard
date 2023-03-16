@@ -1,0 +1,11 @@
+.content-slide{
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr;
+    border: solid 1px red;
+    margin-top: 145px;
+    padding: 0 208px;
+}
+.col-left, .col-center, .col-right{
+    border: solid 1px red;
+} 
+

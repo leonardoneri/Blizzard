@@ -1,74 +1,38 @@
-#container{
-    border-bottom: 1.5px solid rgba(255, 255, 255, 0.5);
-    background-image: url(/img/banner1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
- 
-}
-
-.menu-principal{
-    display: grid;
-    grid-template-columns: 15% 1fr 1fr;
-    height: 112px;
-    padding: 0 208px;
-
-}
-
-.menu-principal div:first-child{
-    display: flex;
-    align-items: center;
-   
-}
-
-.menu-principal div:nth-child(2n){
-    display: flex;
-    align-items: center;
-}
-
-.menu-principal div:last-child{
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        gap: 7.88px;
-    
-}
-.logo-menu{
-    margin-right: 128px;
-}
-.lista-menu{
-    display: flex;
-    gap: 34px;
-
-    color: #ffffff;
+*{
+	box-sizing: border-box;
+	font-size: 16px;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-
-    cursor: pointer;
-
-
-  
 }
-.lista-menu span{
-    padding-left: 8px;
+header{
+    background-image: url(../img/background_mobile-1.png);
+    background-size: cover;
+    background-position: 40%;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
+.menu-principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.5);
+    padding: 24px 24px;
+   
+}
 
 
 .btn{
-    width: 138px;
+    width: 115px;
     height: 45px;
 
     border: 2px solid #FFFFFF;
     border-radius: 3.15px;
     
     color: #ffffff;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
     font-size: 14px;
-    line-height: 21px;
     cursor: pointer;
 
     background: transparent;
@@ -85,13 +49,86 @@
 
     border-color: #00AEFF;
     border-radius: 3.15px;
+    box-sizing: border-box;
+    width: 115px;
+    
+}
+.content-slide{
+    width: 75vw;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 51px;
+    color: #FFFFFF;
+    
+}
 
-    width: 120px;
+.content-slide h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+
+}
+
+.content-slide h4{
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 27px;
+    margin-top: 16px;
+    letter-spacing: -0.5%;
+}
+
+.content-slide button{
+    background-color: #00AEFF;
+    border: none;
+    width: 168px;
+    height: 52px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    margin-top: 32px;
     
 }
 
 
+@media  (max-width: 768px){
+    .btn-menu_principal{
+        display: none;
+    }
+    
+}
 
+@media (min-width: 768px){
+    .btn-menu_principal{
+        display: flex;
+        justify-content: end;
+        gap: 32px;
+    }
+    .menu-principal{
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+    }
+    .col-right-menu{
+        display: flex;
+        justify-content: end;
+    }
+    header{
+        background-image: url(../img/background_tablet-1.png);  
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+    }
+    .content-slide{
+        display: flex;
+        width: 90%;
+        height: 70vh;
+       
+    }
 
+    .content-slide-column-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
-
+}

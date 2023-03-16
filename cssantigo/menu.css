@@ -1,0 +1,107 @@
+body{
+    background-image: url(/img/banner1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+ 
+}
+#container{ 
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.5);
+    
+}
+
+.menu-principal{
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr;
+    height: 112px;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.5);
+    padding: 0 208px;
+
+}
+
+.menu-principal div:first-child{
+    display: flex;
+    align-items: center;
+   
+}
+
+.menu-principal div:nth-child(2n){
+    display: flex;
+    align-items: center;
+}
+
+.menu-principal div:last-child{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 7.88px;
+    
+}
+.logo-menu{
+    margin-right: 128px;
+}
+.lista-menu{
+    display: flex;
+    gap: 34px;
+
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+
+    cursor: pointer;
+
+
+  
+}
+.lista-menu span{
+    padding-left: 8px;
+}
+
+
+
+.btn{
+    width: 138px;
+    height: 45px;
+
+    border: 2px solid #FFFFFF;
+    border-radius: 3.15px;
+    
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    cursor: pointer;
+
+    background: transparent;
+    
+}
+
+.btn-logar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+
+    background-color: #00AEFF;
+
+    border-color: #00AEFF;
+    border-radius: 3.15px;
+
+    width: 120px;
+    
+}
+
+h1{
+    color: #FFFFFF;
+}
+
+
+
+
+
+
